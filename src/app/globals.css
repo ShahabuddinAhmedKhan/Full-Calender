@@ -24,3 +24,426 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom Header Styling to match the image */
+.custom-header {
+  background-color: #f8fafc;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-arrow {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-arrow:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.nav-arrow svg {
+  width: 16px;
+  height: 16px;
+  color: #6b7280;
+}
+
+.current-month {
+  font-size: 18px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.view-dropdown {
+  position: relative;
+}
+
+.view-select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.date-range {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* FullCalendar Custom Styling */
+.fc {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hide default header */
+.fc-header-toolbar {
+  display: none !important;
+}
+
+/* Grid styling to match the image exactly */
+.fc-timegrid {
+  background: white;
+}
+
+/* Time column styling */
+.fc-timegrid-axis {
+  background-color: #f9fafb !important;
+  border-color: #e5e7eb !important;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  padding: 12px 8px;
+  width: 80px !important;
+}
+
+.fc-timegrid-axis-cushion {
+  font-weight: 500;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.fc-timegrid-slot-label {
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.fc-timegrid-slot-lane {
+  border-color: #e5e7eb !important;
+  background-color: white;
+  min-height: 60px;
+}
+
+.fc-timegrid-slot {
+  background-color: white;
+  min-height: 60px;
+  border-color: #e5e7eb !important;
+}
+
+/* Day headers styling */
+.fc-col-header-cell {
+  background-color: #f9fafb !important;
+  border-color: #e5e7eb !important;
+  font-weight: 500;
+  color: #374151;
+  font-size: 12px;
+  text-align: center;
+  padding: 12px 8px;
+}
+
+.fc-col-header-cell:last-child {
+  border-right: none;
+}
+
+.fc-col-header-cell-cushion {
+  font-weight: 500;
+  color: #374151;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* Event styling */
+.fc-event {
+  cursor: pointer;
+  border-radius: 6px;
+  border: none !important;
+  font-weight: 500;
+  font-size: 11px;
+  position: relative;
+  margin: 2px;
+  background-color: transparent !important;
+}
+
+.fc-event:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: all 0.2s;
+}
+
+.fc-event.blue-event {
+  background-color: #3b82f6 !important;
+  color: white !important;
+}
+
+.fc-event.orange-event {
+  background-color: #f59e0b !important;
+  color: white !important;
+}
+
+/* Make "+3 more" text more visible in monthly view */
+.fc-daygrid-more-link {
+  color: #1e40af !important;
+  font-weight: 600 !important;
+  background-color: #dbeafe !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  font-size: 11px !important;
+}
+
+.fc-daygrid-more-link:hover {
+  background-color: #bfdbfe !important;
+  color: #1e3a8a !important;
+}
+
+/* Make date numbers more visible in monthly view */
+.fc-daygrid-day-number {
+  color: #1f2937 !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.fc-daygrid-day.fc-day-other .fc-daygrid-day-number {
+  color: #9ca3af !important;
+  font-weight: 400 !important;
+}
+
+.fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
+  color: #1e40af !important;
+  font-weight: 700 !important;
+  background-color: #dbeafe !important;
+  border-radius: 50% !important;
+  padding: 4px 8px !important;
+}
+
+/* Make the bottom date numbers more visible in monthly view */
+.fc-daygrid-day-frame .fc-daygrid-day-number {
+  color: #000000 !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+}
+
+.fc-daygrid-day.fc-day-other .fc-daygrid-day-frame .fc-daygrid-day-number {
+  color: #000000 !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+}
+
+/* Grayish background for date headers and timing column */
+.fc-timegrid-axis {
+  background-color: rgba(96, 128, 220, 0.04) !important;
+}
+
+.fc-col-header {
+  background-color: rgba(96, 128, 220, 0.04) !important;
+}
+
+.fc-col-header-cell {
+  background-color: rgba(96, 128, 220, 0.04) !important;
+}
+
+.fc-timegrid-slot-label {
+  background-color: rgba(96, 128, 220, 0.04) !important;
+}
+
+/* Remove transparent background to show grid lines */
+.fc .fc-timegrid-col-bg .fc-non-business {
+  background-color: transparent !important;
+  z-index: auto !important;
+}
+
+.fc .fc-non-business {
+  background-color: transparent !important;
+}
+
+/* Ensure grid lines are visible by removing background interference */
+.fc-timegrid-slot {
+  background-color: transparent !important;
+}
+
+.fc-timegrid-slot-lane {
+  background-color: transparent !important;
+}
+
+/* Event content styling */
+.event-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 8px;
+}
+
+.event-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.event-title {
+  font-weight: 500;
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+.event-time {
+  font-weight: 400;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.event-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ef4444;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  z-index: 10;
+}
+
+/* Custom calendar container */
+.calendar-wrapper {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 24px;
+}
+
+.fc-view-harness {
+  background: white;
+}
+
+/* Remove default borders and styling */
+.fc td, .fc th {
+  border-color: #e5e7eb !important;
+}
+
+.fc-theme-standard td, .fc-theme-standard th, .fc-theme-standard .fc-scrollgrid {
+  border-color: #e5e7eb !important;
+}
+
+/* Remove default event styling */
+.fc-event-main {
+  padding: 0;
+}
+
+.fc-event-time {
+  display: none;
+}
+
+.fc-event-title {
+  font-weight: 500;
+  font-size: 11px;
+}
+
+/* Grid layout adjustments */
+.fc-timegrid-cols {
+  border-color: #e5e7eb !important;
+}
+
+.fc-timegrid-col {
+  border-color: #e5e7eb !important;
+  border-right: 1px solid #e5e7eb !important;
+}
+
+.fc-timegrid-col:last-child {
+  border-right: none !important;
+}
+
+.fc-timegrid-slot {
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+.fc-timegrid-slot-lane {
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+/* Time column header */
+.fc-timegrid-axis-frame {
+  background-color: #f9fafb !important;
+  border-color: #e5e7eb !important;
+}
+
+/* Ensure proper spacing */
+.fc-timegrid-slot-lane {
+  padding: 0;
+}
+
+.fc-timegrid-slot {
+  padding: 0;
+}
+
+/* Event positioning */
+.fc-timegrid-event {
+  margin: 1px;
+  border-radius: 6px;
+}
+
+.fc-timegrid-event-harness {
+  margin: 1px;
+}
+
+/* Remove any default FullCalendar styling that conflicts */
+.fc-event-main-frame {
+  padding: 0;
+}
+
+.fc-event-main {
+  padding: 0;
+}
+
+.fc-event-time {
+  display: none !important;
+}
+
+.fc-event-title {
+  display: none !important;
+}
